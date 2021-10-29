@@ -41,21 +41,6 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-        <script>
-          $(document).ready(function () {
-            $(window).scroll(function () {
-              var scroll = $(window).scrollTop();
-              if (scroll > 120) {
-                $('.navbar').addClass('navbar-dark');
-                $('.navbar').removeClass('navbar-light');
-              } else {
-                $('.navbar').addClass('navbar-light');
-                $('.navbar').removeClass('navbar-dark');
-              }
-            });
-          });
-        </script>
       </div>
     </nav>
     <!-- End Navbar -->
@@ -72,36 +57,157 @@
       </div>
     </div>
     <!-- End Header -->
+    <!-- Isi -->
     <div class="isi">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-7">
             <img src="pict/githubpage.jpg" alt="githubpage" width="750" />
+            <br>
+            <br>
             <p>
-              Halo semuanya! Pada blog pertamaku, aku akan membahas mengenai cara membuat Github
-              Pages menggunakan sistem Git.
+              Halo semuanya! Pada blog pertama saya, saya akan membahas mengenai cara membuat Github Pages 
+              menggunakan sistem Git.
             </p>
             <p>
-              Mungkin kamu memiliki file web statis yang memuat portfolio kalian atau blog pribadi
-              kamu dan kamu ingin meng-hosting web kamu secara gratis agar dapat diakses oleh orang
-              di seluruh Dunia secara gratis, maka Github Pages adalah solusinya.
+              Mungkin anda memiliki file web statis yang memuat portfolio kalian atau blog pribadi anda dan anda 
+              ingin meng-hosting web anda secara gratis agar dapat diakses oleh orang di seluruh Dunia, maka Github 
+              Pages adalah solusinya.
             </p>
             <p>
-              Github Pages merupakan layanan hosting website gratis dari Github. Seluruh file
-              website akan di-<i>hosting</i> melalui GitHub, artinya apabila kamu ingin melakukan
-              perubahan kamu bisa melakukannya melalui github atau langsung dari desktop melalui
-              perintah-perintah git.
+              Github  Pages merupakan layanan hosting website gratis dari Github. Seluruh file website akan di-hosting 
+              melalui GitHub, artinya apabila anda ingin melakukan perubahan anda bisa melakukannya melalui github atau 
+              langsung dari desktop melalui perintah-perintah git.
             </p>
             <p>Berikut merupakan cara membuat Github Pages menggunakan sistem Git:</p>
+            <br>
             <h3>
-              1. Pastikan kamu telah memiliki akun Github dan sudah menginstall git pada komputer
-              kamu.
+              1.	Pastikan anda telah memiliki akun Github dan sudah menginstall git pada komputer anda.
             </h3>
-            <h3>Coming soon</h3>
-          </div>
+            <br>
+            <p>
+              Jika anda belum memiliki akun Github, maka anda dapat membuat akun Github terlebih
+              dahulu di <a href="https://github.com">https://github.com</a>. Dan jika anda belum
+              menginstall git pada komputer anda, maka anda dapat mengunduh lalu menginstall git di
+              komputer anda di <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>.
+            </p>
+            <br/>
+            <h3>
+              2.	Buka website Github lalu login menggunakan akun anda. Setelah itu, anda buat <i>repository</i> 
+              baru dengan nama &lt;username anda&gt;.github.io seperti pada gambar di bawah.
+            </h3>
+            <br/>
+            <img src="pict/ss-1.png" alt="github repository" width="750">
+            <p>
+              Apabila sudah, lalu klik <i>create repository</i>.
+            </p>
+            <br/>
+            <h3>
+              3.	Setelah itu buka folder web anda, lalu ketik cmd di bagian <i>path</i> 
+              folder tersebut seperti pada gambar dan klik Enter.
+            </h3>
+            <br/>
+            <img src="pict/ss-2.png" alt="folder web" width="750">
+            <p>Maka, cmd akan terbuka pada <i>path</i> file web anda.</p>
+            <img src="pict/ss-3.png" alt="cmd" width="750">
+            
+            <br>
+            <br>
+            <h3>
+              4.	Ketik "git init" untuk membuat <i>local git repository</i> pada folder web anda.
+            </h3>
+            <br>
+            <img src="pict/ss-4.png" alt="cmd git init" width="750">
+            <br>
+            <br>
+            <h3>
+              5.	Ketik "git add ." untuk menambahkan semua file yang ada pada folder ke <i>staging area</i>.
+            </h3>
+            <br>
+            <img src="pict/ss-5.png" alt="cmd git add ." width="750">
+            <br>
+            <br>
+            <h3>
+              6.	Ketik "git commit -m "Push to github"” untuk memindahkan file yang saat ini berada di <i>staging area</i> 
+              untuk masuk ke <i>repository</i> dan git akan mencatat perubahan yang dimasukan ke <i>repository</i>-nya dengan 
+              diberi pesan "Push to github".
+            </h3>
+            <br>
+            <img src="pict/ss-6.png" alt="cmd git commit" width="750">
+            <br>
+            <br>
+            <h3>
+              7.	Ketik "git branch -M main" untuk membuat <i>branch</i> baru dengan nama "main".
+            </h3>
+            <br>
+            <img src="pict/ss-7.png" alt="cmd git branch" width="750">
+            <br>
+            <br>
+            <h3>
+              8.	Ketik "git remote add origin https://github.com/alfianp613/alfianp613.github.io.git" untuk memilih target 
+              <i>repository</i> Github Pages yang sebelumnya sudah anda buat.
+            </h3>
+            <br>
+            <img src="pict/ss-8.png" alt="cmd git remote" width="750">
+            <br>
+            <br>
+            <h3>
+              9.	Ketik "git push -u origin main" untuk melakukan <i>push local git repository</i> ke Github <i>repository</i> 
+              yang sudah dibuat sebelumnya. Apabila belum pernah melakukan proses ini, maka kita akan diperintahkan untuk login ke akun 
+              Github kita terlebih dahulu untuk melakukan autentikasi.
+            </h3>
+            <br>
+            <img src="pict/ss-9.png" alt="cmd git push" width="750">
+            <br>
+            <br>
+            <h3>
+              10.	Setelah itu, Kembali ke Github lalu <i>refresh</i> browser anda pada <i>repository</i> yang sudah dibuat. 
+              Apabila setelah di <i>refresh</i> tampilannya sudah seperti pada gambar artinya <i>local git repository</i> 
+              kita telah berhasil di-<i>clone</i> ke Github <i>repository</i>.
+            </h3>
+            <br>
+            <img src="pict/ss-10.png" alt="github repository" width="750">
+            <p>
+              Kita bisa lihat pada halaman <i>repository</i> bagian kanan bawah ada tulisan Github Pages <i>active</i>, 
+              artinya website kita sudah dapat diakses.
+            </p>
+            <br>
+            <h3>
+              11.	Terakhir, cek website anda dengan alamat sama dengan nama <i>repository</i>-nya yaitu  
+              &lt;username anda&gt;.github.io di browser anda. Bisa kita lihat pada gambar di bawah bahwa websiter 
+              dapat diakses. Selamat, anda sudah mempunyai website anda sendiri.
+            </h3>
+            <br>
+            <img src="pict/ss-11.png" alt="cmd git commit" width="750">
+            <br>
+            <br>
+            <p>Penulis: Muhammad Alfian Pratama</p>
+            <br>
+            <br>
+            <p>Sumber:</p>
+            <ul>
+              <li>
+                <a href="https://pages.github.com/" class="link-info" target="_blank">
+                  https://pages.github.com/
+                </a>
+              </li>
+              <li>
+                <a href="https://www.datacamp.com/community/tutorials/git-push-pull" 
+                class="link-info" 
+                target="_blank">
+                https://www.datacamp.com/community/tutorials/git-push-pull
+                </a>
+              </li>
+            </ul>
         </div>
       </div>
     </div>
+    <!-- Akhir isi -->
+    <!-- Footer -->
+    <footer id="footer">
+      <p class="text-center text-light">Copyright &copy; Alfian 2021</p>
+    </footer>
+    <!-- End Footer -->
   </body>
   <script>
     window.onscroll = function () {
@@ -114,5 +220,20 @@
         document.getElementById('main-nav').style.backgroundColor = 'rgba(81, 94, 99, 0)';
       }
     }
+  </script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > 120) {
+          $('.navbar').addClass('navbar-dark');
+          $('.navbar').removeClass('navbar-light');
+        } else {
+          $('.navbar').addClass('navbar-light');
+          $('.navbar').removeClass('navbar-dark');
+        }
+      });
+    });
   </script>
 </html>

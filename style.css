@@ -78,14 +78,6 @@ footer {
 .btn-basic:hover {
   opacity: 0.7;
 }
-#footer {
-  background-color: #c9d8b6;
-}
-
-.icon-footer {
-  margin-top: 10px;
-  text-align: center;
-}
 
 .social-icons {
   padding-left: 0;
