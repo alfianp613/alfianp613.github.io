@@ -1,0 +1,15 @@
+body {
+  background: #f1ecc3;
+}
+.header {
+  padding-top: 6rem;
+}
+
+.isi p {
+  font-size: 24px;
+  text-align: justify;
+}
+#main-nav {
+  background-color: rgba(81, 94, 99, 0);
+  transition: 0.5s;
+}

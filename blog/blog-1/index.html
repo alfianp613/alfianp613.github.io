@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- Blog CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Icon CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Cara Membuat Github Page</title>
+  </head>
+  <body id="body">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="main-nav">
+      <div class="container">
+        <a class="navbar-brand" href="https://alfianp613.github.io"
+          ><i class="fa fa-arrow-left"></i> Kembali</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script>
+          $(document).ready(function () {
+            $(window).scroll(function () {
+              var scroll = $(window).scrollTop();
+              if (scroll > 120) {
+                $('.navbar').addClass('navbar-dark');
+                $('.navbar').removeClass('navbar-light');
+              } else {
+                $('.navbar').addClass('navbar-light');
+                $('.navbar').removeClass('navbar-dark');
+              }
+            });
+          });
+        </script>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Header -->
+    <div class="header">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            <h1 class="fw-bold" style="font-size: 60px">Cara Membuat Github Page</h1>
+            <h2 class="text-muted">28 Oktober 2021</h2>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Header -->
+    <div class="isi">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            <img src="pict/githubpage.jpg" alt="githubpage" width="750" />
+            <p>
+              Halo semuanya! Pada blog pertamaku, aku akan membahas mengenai cara membuat Github
+              Pages menggunakan sistem Git.
+            </p>
+            <p>
+              Mungkin kamu memiliki file web statis yang memuat portfolio kalian atau blog pribadi
+              kamu dan kamu ingin meng-hosting web kamu secara gratis agar dapat diakses oleh orang
+              di seluruh Dunia secara gratis, maka Github Pages adalah solusinya.
+            </p>
+            <p>
+              Github Pages merupakan layanan hosting website gratis dari Github. Seluruh file
+              website akan di-<i>hosting</i> melalui GitHub, artinya apabila kamu ingin melakukan
+              perubahan kamu bisa melakukannya melalui github atau langsung dari desktop melalui
+              perintah-perintah git.
+            </p>
+            <p>Berikut merupakan cara membuat Github Pages menggunakan sistem Git:</p>
+            <h3>
+              1. Pastikan kamu telah memiliki akun Github dan sudah menginstall git pada komputer
+              kamu.
+            </h3>
+            <h3>Coming soon</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    window.onscroll = function () {
+      scrollFunction();
+    };
+    function scrollFunction() {
+      if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+        document.getElementById('main-nav').style.backgroundColor = 'rgba(81, 94, 99, 1)';
+      } else {
+        document.getElementById('main-nav').style.backgroundColor = 'rgba(81, 94, 99, 0)';
+      }
+    }
+  </script>
+</html>
